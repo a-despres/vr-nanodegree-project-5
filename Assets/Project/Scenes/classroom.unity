@@ -130,7 +130,7 @@ Transform:
   - {fileID: 1354860611}
   - {fileID: 2095611715}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &18263474
 Prefab:
@@ -387,8 +387,8 @@ MonoBehaviour:
           m_MethodName: TeleportToMarker
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 86040369}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 86040375}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -493,7 +493,7 @@ Transform:
   m_Children:
   - {fileID: 576368577}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &86040375
 MonoBehaviour:
@@ -506,6 +506,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b07eb1e2bd8846f2bd3774bc51b1055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Virtual Field Trips
+  description: 'Not since Miss Frizzle and her magic school bus have field trips been
+    this awesome. With VR, students can travel all over the world, and even into outer
+    space. With Buzz Aldrin: Cycling Pathways to Mars, students can travel to the
+    Moon and then to Mars where they will learn about what it will take to become
+    an interplanetary species. With Google Expeditions, teachers can lead students
+    on virtual tours through coral reefs or historic sites such as Machu Piccu or
+    the Great Pyramids.'
+  photo: {fileID: 2800000, guid: 0698f2b5be4c64a2bb52e9f41231d675, type: 3}
+  caption: 'Buzz Aldrin: Cycling Pathways to Mars by LIFE VR'
+  paper: {fileID: 537085214}
 --- !u!95 &86040376
 Animator:
   serializedVersion: 3
@@ -560,7 +571,7 @@ Transform:
   - {fileID: 1046215564}
   - {fileID: 752801299}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &99892047
 Prefab:
@@ -632,6 +643,87 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a300e047c0e7c4e4ea221f801c938aaf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &120875681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 120875685}
+  - component: {fileID: 120875684}
+  - component: {fileID: 120875683}
+  - component: {fileID: 120875682}
+  m_Layer: 0
+  m_Name: startScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &120875682
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120875681}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 94e837cab01044843b706dfbda007245, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!65 &120875683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120875681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &120875684
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120875681}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &120875685
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120875681}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28, y: 2, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &166319043 stripped
 Transform:
   m_PrefabParentObject: {fileID: 436748, guid: 678598681be10844fb5ed184d29777bf, type: 2}
@@ -3544,7 +3636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 412cc5e69070346e0984a2a75211f179, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 412cc5e69070346e0984a2a75211f179, type: 3}
       propertyPath: m_LocalScale.x
@@ -3601,8 +3693,8 @@ MonoBehaviour:
           m_MethodName: TeleportToMarker
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 224550952}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 224550955}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3656,6 +3748,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b07eb1e2bd8846f2bd3774bc51b1055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Art Appreciation
+  description: Get up close and take your time admiring some of the greatest works
+    of art. With Google Arts & Culture, students can take guided tours through world
+    famous galleries and culturally significant sites and gain an appreciation for
+    classic and modern works of art. The VR Museum of Fine Art allows students to
+    explore famous sculptures and paintings such as Michaelangelo's David and da Vinci's
+    Mona Lisa.
+  photo: {fileID: 2800000, guid: 8d47ec3c2884a44babb1b8af3f9b3946, type: 3}
+  caption: The VR Museum of Fine Art
+  paper: {fileID: 1451939419}
 --- !u!65 &224550956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3747,6 +3849,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 241488951}
+  - component: {fileID: 241488953}
+  - component: {fileID: 241488952}
   m_Layer: 0
   m_Name: distanceBook
   m_TagString: Untagged
@@ -3766,8 +3870,50 @@ Transform:
   m_Children:
   - {fileID: 75671172}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &241488952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241488950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064520710}
+          m_MethodName: ShowInfoDisplay
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2102266380}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &241488953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 241488950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.075, z: 0.65}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &245059180 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482394, guid: d80d803f7fd3e6c45804ac11bc6a9e52, type: 2}
@@ -3994,7 +4140,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400824, guid: 902cc9068e8ac144e9659edf6f895249, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400824, guid: 902cc9068e8ac144e9659edf6f895249, type: 2}
       propertyPath: m_LocalScale.y
@@ -4101,8 +4247,8 @@ MonoBehaviour:
           m_MethodName: TeleportToMarker
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 323307446}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 323307449}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4168,6 +4314,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b07eb1e2bd8846f2bd3774bc51b1055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: It's Not Magic, It's Science
+  description: Blast off and take a tour of the solar system or learn what it will
+    take to live on Mars. With VR, students can not only reach for the stars, but
+    they can shrink down and take a voyage through the human body, or learn about
+    molecules. With Chemistry VR, students can conduct experiments in a virtual lab,
+    which allows for students to learn from their mistakes and take more risks than
+    would be possible in a traditional lab environment.
+  photo: {fileID: 2800000, guid: 54c4dd0b953be40059351e9556a55d0a, type: 3}
+  caption: 3D Organon VR Anatomy
+  paper: {fileID: 2130061625}
 --- !u!95 &323307450
 Animator:
   serializedVersion: 3
@@ -7396,7 +7552,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458994, guid: abe53f59fa56e5246add018957d273e2, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 458994, guid: abe53f59fa56e5246add018957d273e2, type: 2}
       propertyPath: m_LocalScale.x
@@ -7607,6 +7763,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 537085215}
+  - component: {fileID: 537085217}
+  - component: {fileID: 537085216}
   m_Layer: 0
   m_Name: fieldTripPaper
   m_TagString: Untagged
@@ -7627,8 +7785,50 @@ Transform:
   - {fileID: 1638426937}
   - {fileID: 2108320869}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &537085216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537085214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064520710}
+          m_MethodName: ShowInfoDisplay
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 86040375}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &537085217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537085214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.075, z: 0.65}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &541857432
 GameObject:
   m_ObjectHideFlags: 0
@@ -7658,7 +7858,7 @@ Transform:
   - {fileID: 411804962}
   - {fileID: 190877277}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &550051467
 Prefab:
@@ -7927,7 +8127,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 869377221
+  randomSeed: -2066890267
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -11070,7 +11270,7 @@ Transform:
   - {fileID: 1944083868}
   - {fileID: 1180443362}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &823702100
 Prefab:
@@ -11340,6 +11540,78 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 482394, guid: d80d803f7fd3e6c45804ac11bc6a9e52, type: 2}
   m_PrefabInternal: {fileID: 373350491}
+--- !u!1 &887135170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1222390377568432, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 887135171}
+  - component: {fileID: 887135173}
+  - component: {fileID: 887135172}
+  m_Layer: 5
+  m_Name: panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &887135171
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224434838376744080, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887135170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1567568661}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &887135172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114364417630317974, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887135170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &887135173
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222312118447350584, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887135170}
 --- !u!4 &897717553 stripped
 Transform:
   m_PrefabParentObject: {fileID: 436748, guid: 678598681be10844fb5ed184d29777bf, type: 2}
@@ -11383,7 +11655,7 @@ Transform:
   - {fileID: 1710219025}
   - {fileID: 1057970807}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &976828535
 Prefab:
@@ -11443,6 +11715,84 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7a11aa9a788f7b449b86c93e7c356fd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &988080712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1522293522759044, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 988080715}
+  - component: {fileID: 988080714}
+  - component: {fileID: 988080713}
+  m_Layer: 5
+  m_Name: title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &988080713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114732928613626666, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988080712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 45958493f990240e5a4bbdf782144a9e, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: VR in Education
+--- !u!222 &988080714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222528999286763354, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988080712}
+--- !u!224 &988080715
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224263004918859492, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988080712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1567568661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 45}
+  m_SizeDelta: {x: 200, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &998720188
 Prefab:
   m_ObjectHideFlags: 0
@@ -11672,6 +12022,51 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 443062, guid: 33d4dadfd9c5a634dba25b07aaf8ab3e, type: 2}
   m_PrefabInternal: {fileID: 199995492}
+--- !u!1 &1064520709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1064520711}
+  - component: {fileID: 1064520710}
+  m_Layer: 0
+  m_Name: '[GameManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1064520710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064520709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aadd0ffe5965474692bff9484a31af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoDisplay: {fileID: 114948679690066540, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  infoDisplayInstance: {fileID: 0}
+  currentMarker: {fileID: 0}
+  audioManager: {fileID: 1608464373}
+--- !u!4 &1064520711
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064520709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.6647298, y: 1.1054999, z: -0.054706212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068874700
 GameObject:
   m_ObjectHideFlags: 0
@@ -14488,7 +14883,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 766346198, guid: 463285ecd6702471a909ba810832bf0e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 463285ecd6702471a909ba810832bf0e, type: 2}
@@ -14541,7 +14936,7 @@ Transform:
   - {fileID: 1639406912}
   - {fileID: 337352640}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1127318525
 Prefab:
@@ -15493,7 +15888,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc7fbb16a9714470290fc96d77ec7f0e, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fc7fbb16a9714470290fc96d77ec7f0e, type: 3}
       propertyPath: m_LocalScale.x
@@ -15546,6 +15941,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1451939420}
+  - component: {fileID: 1451939422}
+  - component: {fileID: 1451939421}
   m_Layer: 0
   m_Name: artPaper
   m_TagString: Untagged
@@ -15566,8 +15963,50 @@ Transform:
   - {fileID: 316953357}
   - {fileID: 1000415462}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451939421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451939419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064520710}
+          m_MethodName: ShowInfoDisplay
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 224550955}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1451939422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451939419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.075, z: 0.65}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1455248276
 GameObject:
   m_ObjectHideFlags: 0
@@ -15576,6 +16015,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1455248277}
+  - component: {fileID: 1455248279}
+  - component: {fileID: 1455248278}
   m_Layer: 0
   m_Name: historyPaper
   m_TagString: Untagged
@@ -15596,8 +16037,50 @@ Transform:
   - {fileID: 314943002}
   - {fileID: 496129244}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1455248278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455248276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064520710}
+          m_MethodName: ShowInfoDisplay
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2137063508}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1455248279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455248276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.075, z: 0.65}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1457843624
 Prefab:
   m_ObjectHideFlags: 0
@@ -15701,7 +16184,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9acb7622b4c7343d3afb55727fb24621, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9acb7622b4c7343d3afb55727fb24621, type: 3}
       propertyPath: m_LocalScale.x
@@ -15987,6 +16470,171 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 419744, guid: e7a11aa9a788f7b449b86c93e7c356fd, type: 2}
   m_PrefabInternal: {fileID: 1368227117}
+--- !u!1 &1567568654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1351733810246630, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1567568661}
+  - component: {fileID: 1567568660}
+  - component: {fileID: 1567568659}
+  - component: {fileID: 1567568658}
+  - component: {fileID: 1567568657}
+  - component: {fileID: 1567568656}
+  - component: {fileID: 1567568655}
+  m_Layer: 5
+  m_Name: startPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1567568655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114382532449196360, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1567568657}
+          m_MethodName: StartExperience
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &1567568656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65151934191337462, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 400, y: 150, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1567568657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114948679690066540, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429d372ce51bf43b8aad4812d6d05838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  photo: {fileID: 0}
+  caption: {fileID: 0}
+  title: {fileID: 988080713}
+  description: {fileID: 2032899235}
+  fieldtrip: {fileID: 2800000, guid: 0698f2b5be4c64a2bb52e9f41231d675, type: 3}
+--- !u!114 &1567568658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114343406211900372, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1567568659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114894940298732712, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 8
+--- !u!223 &1567568660
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 223872793639476130, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1567568661
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224190784951936190, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567568654}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 887135171}
+  - {fileID: 988080715}
+  - {fileID: 2032899237}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 28, y: 2}
+  m_SizeDelta: {x: 400, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1572561725 stripped
 Transform:
   m_PrefabParentObject: {fileID: 436748, guid: 678598681be10844fb5ed184d29777bf, type: 2}
@@ -16049,6 +16697,129 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 678598681be10844fb5ed184d29777bf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1608464370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1608464372}
+  - component: {fileID: 1608464371}
+  - component: {fileID: 1608464373}
+  m_Layer: 0
+  m_Name: '[AudioManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1608464371
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608464370}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1608464372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608464370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3787484, y: 1.1054999, z: -3.7213705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1608464373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1608464370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e27cac403ca485bbf022cb624076c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chime: {fileID: 8300000, guid: a9bb9ffcceb61431d8f0c79912347043, type: 3}
+  click: {fileID: 8300000, guid: 9daa0ebdf355d462f946c612e1b2b0b3, type: 3}
 --- !u!1001 &1628589771
 Prefab:
   m_ObjectHideFlags: 0
@@ -16144,7 +16915,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402350, guid: b4a697b4482d6cf46af6a5b086703e64, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 402350, guid: b4a697b4482d6cf46af6a5b086703e64, type: 2}
       propertyPath: m_LocalScale.y
@@ -16593,7 +17364,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_LocalPosition.y
@@ -16621,7 +17392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 177758, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -16801,10 +17572,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1771787038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EventMask:
+  raycastMode: 1
+  raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
 --- !u!4 &1777234488 stripped
@@ -17073,7 +17845,7 @@ Transform:
   - {fileID: 1397368902}
   - {fileID: 1739451634}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876385826
 GameObject:
@@ -17113,7 +17885,7 @@ Transform:
   - {fileID: 897717553}
   - {fileID: 2103677035}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1885972803
 Prefab:
@@ -17807,6 +18579,88 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d80d803f7fd3e6c45804ac11bc6a9e52, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2032899234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1117925403980268, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2032899237}
+  - component: {fileID: 2032899236}
+  - component: {fileID: 2032899235}
+  m_Layer: 5
+  m_Name: description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032899235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114950815553079494, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032899234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 180ef4dc43315472189c3faa47ff01fe, type: 3}
+    m_FontSize: 8
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'This experience provides a brief overview of some of the areas VR can have
+    a positive impact in education.
+
+
+    Use the trigger to select subject icons and to close information windows.'
+--- !u!222 &2032899236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222652059198904332, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032899234}
+--- !u!224 &2032899237
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224573978778411918, guid: 3020339eb502c4815a04c95fa1c6914a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032899234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000004, y: 1, z: 1.0000004}
+  m_Children: []
+  m_Father: {fileID: 1567568661}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2034231603
 Prefab:
   m_ObjectHideFlags: 0
@@ -20779,7 +21633,7 @@ Transform:
   - {fileID: 1218935240}
   - {fileID: 2070211360}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: -15}
 --- !u!65 &2102266378
 BoxCollider:
@@ -20813,8 +21667,8 @@ MonoBehaviour:
           m_MethodName: TeleportToMarker
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 2102266376}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 2102266380}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -20868,6 +21722,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b07eb1e2bd8846f2bd3774bc51b1055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Learning from a Distance
+  description: Before VR, distance learning usually meant interacting with other students
+    and instructors through forums or chat and uploading assignments to be graded.
+    With VR, students can attend classes as if they were actually sitting inside the
+    lecture hall. VR provides a much more immersive and natural experience for students.
+    Lessons can be attended live or by viewing pre-recorded sessions.
+  photo: {fileID: 2800000, guid: 68315988fd8604be4a823b31d0c851fb, type: 3}
+  caption: Harvard's CS50 Class (Lecture Available in VR)
+  paper: {fileID: 241488950}
 --- !u!95 &2102266381
 Animator:
   serializedVersion: 3
@@ -20984,7 +21847,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 459452, guid: d988a3057692ff842bac435c49daefbc, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 459452, guid: d988a3057692ff842bac435c49daefbc, type: 2}
       propertyPath: m_LocalScale.x
@@ -21191,6 +22054,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2130061626}
+  - component: {fileID: 2130061628}
+  - component: {fileID: 2130061627}
   m_Layer: 0
   m_Name: sciencePaper
   m_TagString: Untagged
@@ -21211,8 +22076,50 @@ Transform:
   - {fileID: 1420434973}
   - {fileID: 89027378}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130061627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130061625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1064520710}
+          m_MethodName: ShowInfoDisplay
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 323307449}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!65 &2130061628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130061625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 0.075, z: 0.65}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2137063507 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9acb7622b4c7343d3afb55727fb24621, type: 3}
@@ -21228,6 +22135,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b07eb1e2bd8846f2bd3774bc51b1055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: History and Geography
+  description: Explore ancient Egypt or ancient Rome; in VR, history comes alive as
+    students not only learn about important events in history, but experience them.
+    VR allows students to explore ancient sites and learn about their significance,
+    and come face-to-face with figures that helped shaped the world. With applications
+    like Google Earth, VR students can explore cities, ancient sites, and the natural
+    wonders of the world.
+  photo: {fileID: 2800000, guid: 8d174f96b18c54ddeaaad0f3f1e2640f, type: 3}
+  caption: Rome by Unimersiv
+  paper: {fileID: 1455248276}
 --- !u!114 &2137063509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21248,8 +22165,8 @@ MonoBehaviour:
           m_MethodName: TeleportToMarker
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 2137063507}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 2137063508}
+            m_ObjectArgumentAssemblyTypeName: Icon, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
