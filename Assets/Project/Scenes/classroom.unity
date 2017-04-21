@@ -516,6 +516,7 @@ MonoBehaviour:
     the Great Pyramids.'
   photo: {fileID: 2800000, guid: 0698f2b5be4c64a2bb52e9f41231d675, type: 3}
   caption: 'Buzz Aldrin: Cycling Pathways to Mars by LIFE VR'
+  audio: {fileID: 8300000, guid: 5bea12d3ac9b64762af7301a9bbc11ac, type: 3}
   paper: {fileID: 537085214}
 --- !u!95 &86040376
 Animator:
@@ -3757,6 +3758,7 @@ MonoBehaviour:
     Mona Lisa.
   photo: {fileID: 2800000, guid: 8d47ec3c2884a44babb1b8af3f9b3946, type: 3}
   caption: The VR Museum of Fine Art
+  audio: {fileID: 8300000, guid: 3a0769ecf20b64cfa8916d59acd1fffd, type: 3}
   paper: {fileID: 1451939419}
 --- !u!65 &224550956
 BoxCollider:
@@ -4357,6 +4359,7 @@ MonoBehaviour:
     would be possible in a traditional lab environment.
   photo: {fileID: 2800000, guid: 54c4dd0b953be40059351e9556a55d0a, type: 3}
   caption: 3D Organon VR Anatomy
+  audio: {fileID: 8300000, guid: 25160c0711c76486c8a7dd12b3d744f2, type: 3}
   paper: {fileID: 2130061625}
 --- !u!95 &323307450
 Animator:
@@ -21868,6 +21871,7 @@ MonoBehaviour:
     Lessons can be attended live or by viewing pre-recorded sessions.
   photo: {fileID: 2800000, guid: 68315988fd8604be4a823b31d0c851fb, type: 3}
   caption: Harvard's CS50 Class (Lecture Available in VR)
+  audio: {fileID: 8300000, guid: 80e0bfa80f73040809364f6e8e5299d1, type: 3}
   paper: {fileID: 241488950}
 --- !u!95 &2102266381
 Animator:
@@ -22316,6 +22320,7 @@ MonoBehaviour:
     wonders of the world.
   photo: {fileID: 2800000, guid: 8d174f96b18c54ddeaaad0f3f1e2640f, type: 3}
   caption: Rome by Unimersiv
+  audio: {fileID: 8300000, guid: 749ef20df9995439aba867c90c18f26f, type: 3}
   paper: {fileID: 1455248276}
 --- !u!114 &2137063509
 MonoBehaviour:

@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 		infoDisplayInstance = Instantiate (infoDisplay);
 
 		if (infoDisplayInstance != null) {
-			audioManager.PlayClick ();
+			audioManager.PlayClip (currentMarker);
 			DisableIcons ();
 			DisablePapers ();
 			infoDisplayInstance.transform.position = new Vector3(camera.transform.position.x - 2, 2, camera.transform.position.z);
