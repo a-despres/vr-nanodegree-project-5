@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour {
 
 	public InfoDisplay infoDisplay;
 	public InfoDisplay infoDisplayInstance;
+	public ToolTip toolTip;
+	public ToolTip toolTipInstance;
 	public Icon currentMarker;
 
 	private Camera camera;
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void ShowInfoDisplay (Icon forSubject) {
+		CloseToolTip ();
+
 		infoDisplayInstance = Instantiate (infoDisplay);
 
 		if (infoDisplayInstance != null) {
@@ -31,6 +35,26 @@ public class GameManager : MonoBehaviour {
 			infoDisplayInstance.Set (forSubject);
 		} else {
 			print ("Error: Info Display Not Initialized");
+		}
+	}
+
+	public void ShowToolTip (Icon forSubject) {
+		toolTipInstance = Instantiate (toolTip);
+
+		if (toolTipInstance != null) {
+			toolTipInstance.transform.position = new Vector3(currentMarker.transform.position.x, currentMarker.transform.position.y - 0.7f, currentMarker.transform.position.z);
+			toolTipInstance.transform.rotation = camera.transform.rotation;
+			toolTipInstance.Set (forSubject);
+		} else {
+			print ("Error: Tool Tip Not Initialized");
+		}
+	}
+
+	public void CloseToolTip () {
+		if (toolTipInstance != null) {
+			Destroy (toolTipInstance.gameObject);
+		} else {
+			print ("Error: Tool Tip Could Not Be Destroyed");
 		}
 	}
 
