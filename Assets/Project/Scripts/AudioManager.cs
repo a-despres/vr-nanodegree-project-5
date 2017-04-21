@@ -27,4 +27,11 @@ public class AudioManager : MonoBehaviour {
 			audioSource.Play ();
 		}
 	}
+
+	public void PlayClip (Icon forSubject) {
+		if (audioSource != null) {
+			audioSource.clip = forSubject.audio;
+			audioSource.Play ();
+		}
+	}
 }
