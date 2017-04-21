@@ -9,6 +9,7 @@ public class Icon : MonoBehaviour {
 	public string description;
 	public Texture photo;
 	public string caption;
+	public AudioClip audio;
 
 	public GameObject paper;
 
